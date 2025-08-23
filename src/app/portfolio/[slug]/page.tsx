@@ -124,4 +124,8 @@ function PortfolioDetailPage({ params }: Props) {
   );
 }
 
+export function generateStaticParams() {
+  return Object.keys(portfolioDetails).map((slug) => ({ slug }));
+}
+
 export default PortfolioDetailPage;
