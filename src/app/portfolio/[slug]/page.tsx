@@ -1,7 +1,11 @@
+import { type Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-// Mock data for portfolio items
+type PageProps = {
+  params: { slug: string };
+};
+
 const portfolioDetails = {
   "fashion-lookbook": {
     title: "Fashion Lookbook",
@@ -49,7 +53,11 @@ const portfolioDetails = {
   },
 };
 
-export default async function PortfolioDetailPage({ params }: { params: { slug: string } }) {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  return Object.keys(portfolioDetails).map((slug) => ({ slug }));
+}
+
+export default async function Page({ params }: PageProps) {
   const { slug } = params;
   const project = portfolioDetails[slug as keyof typeof portfolioDetails];
 
@@ -118,8 +126,4 @@ export default async function PortfolioDetailPage({ params }: { params: { slug: 
       </div>
     </div>
   );
-}
-
-export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  return Object.keys(portfolioDetails).map((slug) => ({ slug }));
 }
