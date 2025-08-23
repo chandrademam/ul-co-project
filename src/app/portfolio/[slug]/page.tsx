@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// Mock data for portfolio items. In a real app, you'd fetch this from a CMS or database.
+// Mock data for portfolio items
 const portfolioDetails = {
   "fashion-lookbook": {
     title: "Fashion Lookbook",
@@ -53,7 +53,7 @@ type Props = {
   params: { slug: string };
 };
 
-function PortfolioDetailPage({ params }: Props) {
+export default async function PortfolioDetailPage({ params }: Props) {
   const { slug } = params;
   const project = portfolioDetails[slug as keyof typeof portfolioDetails];
 
@@ -124,8 +124,7 @@ function PortfolioDetailPage({ params }: Props) {
   );
 }
 
-export function generateStaticParams() {
+// ✅ Fix: Async + return type
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return Object.keys(portfolioDetails).map((slug) => ({ slug }));
 }
-
-export default PortfolioDetailPage;
