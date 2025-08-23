@@ -134,5 +134,3 @@ export default async function PortfolioDetailPage({ params }: Props) {
     </div>
   );
 };
-
-export default PortfolioDetailPage;
