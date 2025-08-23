@@ -49,14 +49,7 @@ const portfolioDetails = {
   },
 };
 
-// Define a type for the props
-interface PortfolioDetailPageProps {
-  params: {
-    slug: string;
-  };
-}
-
-const PortfolioDetailPage: React.FC<PortfolioDetailPageProps> = ({ params }) => {
+const PortfolioDetailPage = ({ params }: { params: { slug: string } }) => {
   const { slug } = params;
   const project = portfolioDetails[slug as keyof typeof portfolioDetails];
 
