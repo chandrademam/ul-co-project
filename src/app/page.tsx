@@ -70,8 +70,8 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-black">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
-          <p className="text-gray-400 mb-8">Have a project in mind? I'd love to hear about it.</p>
+          <h2 className="text-3xl font-bold mb-4">Let&apos;s Work Together</h2>
+          <p className="text-gray-400 mb-8">Have a project in mind? I&apos;d love to hear about it.</p>
           <Link href="/contact" className="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition duration-300">
             Get in Touch
           </Link>
