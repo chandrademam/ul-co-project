@@ -49,7 +49,11 @@ const portfolioDetails = {
   },
 };
 
-const PortfolioDetailPage = ({ params }: { params: { slug: string } }) => {
+type Props = {
+  params: { slug: string }
+};
+
+const PortfolioDetailPage = ({ params }: Props) => {
   const { slug } = params;
   const project = portfolioDetails[slug as keyof typeof portfolioDetails];
 
