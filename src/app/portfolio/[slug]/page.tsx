@@ -57,7 +57,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return Object.keys(portfolioDetails).map((slug) => ({ slug }));
 }
 
-export default async function Page({ params }: PageProps) {
+const Page = async ({ params }: PageProps) => {
   const { slug } = params;
   const project = portfolioDetails[slug as keyof typeof portfolioDetails];
 
@@ -126,4 +126,6 @@ export default async function Page({ params }: PageProps) {
       </div>
     </div>
   );
-}
+};
+
+export default Page;
