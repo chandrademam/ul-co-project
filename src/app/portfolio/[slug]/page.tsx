@@ -49,11 +49,7 @@ const portfolioDetails = {
   },
 };
 
-type Props = {
-  params: { slug: string };
-};
-
-export default async function PortfolioDetailPage({ params }: Props) {
+export default async function PortfolioDetailPage({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const project = portfolioDetails[slug as keyof typeof portfolioDetails];
 
@@ -124,7 +120,6 @@ export default async function PortfolioDetailPage({ params }: Props) {
   );
 }
 
-// ✅ Fix: Async + return type
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return Object.keys(portfolioDetails).map((slug) => ({ slug }));
 }
