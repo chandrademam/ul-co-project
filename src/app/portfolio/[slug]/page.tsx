@@ -53,7 +53,7 @@ type Props = {
   params: { slug: string }
 };
 
-const PortfolioDetailPage = ({ params }: Props) => {
+export default async function PortfolioDetailPage({ params }: Props) {
   const { slug } = params;
   const project = portfolioDetails[slug as keyof typeof portfolioDetails];
 
