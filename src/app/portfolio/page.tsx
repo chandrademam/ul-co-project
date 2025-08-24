@@ -8,6 +8,7 @@ const portfolioItems = [
     description: "Delicate fabrics meet bold silhouettes in nature-inspired designs",
     image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=2574&auto=format&fit=crop",
     color: "rose",
+    slug: "ethereal-spring",
   },
   {
     title: "Urban Minimalist",
@@ -15,6 +16,7 @@ const portfolioItems = [
     description: "Clean lines and sustainable materials for modern city living",
     image: "https://images.unsplash.com/photo-1581044777550-4cfa6ce6708f?q=80&w=2574&auto=format&fit=crop",
     color: "blue",
+    slug: "urban-minimalist",
   },
   {
     title: "Avant-Garde Evening",
@@ -22,6 +24,7 @@ const portfolioItems = [
     description: "Dramatic statements and luxurious textures for evening wear",
     image: "https://images.unsplash.com/photo-1551803091-e2ab682b5185?q=80&w=2574&auto=format&fit=crop",
     color: "purple",
+    slug: "avant-garde-evening",
   },
   {
     title: "Timeless Classics",
@@ -29,6 +32,7 @@ const portfolioItems = [
     description: "Heritage designs reimagined for contemporary wardrobes",
     image: "https://images.unsplash.com/photo-1492707892479-7486c25655d4?q=80&w=2574&auto=format&fit=crop",
     color: "amber",
+    slug: "timeless-classics",
   },
   {
     title: "Monochrome Mood",
@@ -36,6 +40,7 @@ const portfolioItems = [
     description: "Exploring contrast and texture in black and white",
     image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2574&auto=format&fit=crop",
     color: "gray",
+    slug: "monochrome-mood",
   },
   {
     title: "Street Couture",
@@ -43,6 +48,7 @@ const portfolioItems = [
     description: "High fashion meets streetwear in unexpected combinations",
     image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2574&auto=format&fit=crop",
     color: "emerald",
+    slug: "street-couture",
   },
 ];
 
@@ -113,7 +119,8 @@ const PortfolioPage = () => {
                     {/* Overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <div className="absolute bottom-6 left-6 right-6">
-                        <div
+                        <Link
+                          href={`/collection/${item.slug}`}
                           className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${getColorClasses(
                             item.color
                           )} text-white rounded-full text-sm font-medium mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300`}>
@@ -122,7 +129,7 @@ const PortfolioPage = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                           </svg>
                           View Details
-                        </div>
+                        </Link>
                       </div>
                     </div>
 
@@ -137,12 +144,12 @@ const PortfolioPage = () => {
                     <p className="text-gray-600 leading-relaxed mb-6">{item.description}</p>
 
                     <div className="flex items-center justify-between">
-                      <div className="flex items-center text-rose-600 group-hover:text-rose-700 transition-colors">
+                      <Link href={`/collection/${item.slug}`} className="flex items-center text-rose-600 group-hover:text-rose-700 transition-colors">
                         <span className="text-sm font-medium mr-2">Explore Collection</span>
                         <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                         </svg>
-                      </div>
+                      </Link>
 
                       <div className="flex space-x-2">
                         <button className="w-8 h-8 bg-gray-100 hover:bg-rose-100 rounded-full flex items-center justify-center transition-colors duration-300 group-hover:scale-110">
@@ -208,7 +215,7 @@ const PortfolioPage = () => {
               className="inline-flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-600 text-white font-medium py-4 px-8 rounded-full hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-rose-300/50">
               <span className="mr-2">Start a Project</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
             </Link>
           </div>

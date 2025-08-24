@@ -88,7 +88,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Collection 1 */}
-            <div className="group animate-fade-in-scroll delay-100">
+            <Link href="/collection/ethereal-spring" className="group animate-fade-in-scroll delay-100">
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:scale-105">
                 <div className="relative overflow-hidden">
                   <Image
@@ -114,10 +114,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Collection 2 */}
-            <div className="group animate-fade-in-scroll delay-200">
+            <Link href="/collection/urban-minimalist" className="group animate-fade-in-scroll delay-200">
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:scale-105">
                 <div className="relative overflow-hidden">
                   <Image
@@ -143,10 +143,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
 
             {/* Collection 3 */}
-            <div className="group animate-fade-in-scroll delay-300">
+            <Link href="/collection/avant-garde-evening" className="group animate-fade-in-scroll delay-300">
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:scale-105">
                 <div className="relative overflow-hidden">
                   <Image
@@ -172,7 +172,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           </div>
 
           {/* View All Button */}
