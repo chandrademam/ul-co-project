@@ -25,7 +25,7 @@ const AboutPage = () => {
               <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">Crafting tomorrow's fashion through timeless elegance and sustainable innovation.</p>
+            <p className="text-xl md:text-2xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">Crafting tomorrow&apos;s fashion through timeless elegance and sustainable innovation.</p>
           </div>
         </div>
       </section>
@@ -310,7 +310,7 @@ const AboutPage = () => {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
 
-            <p className="text-xl font-light text-gray-600 mb-12 max-w-2xl mx-auto">Ready to collaborate on your next fashion project? I'd love to hear your vision.</p>
+            <p className="text-xl font-light text-gray-600 mb-12 max-w-2xl mx-auto">Ready to collaborate on your next fashion project? I&apos;d love to hear your vision.</p>
 
             <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
               <Link

@@ -66,7 +66,7 @@ export default function Home() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-gray-600 mb-8">Fashion is more than clothing—it's a language of self-expression, a bridge between art and life.</p>
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-gray-600 mb-8">Fashion is more than clothing&mdash;it&apos;s a language of self-expression, a bridge between art and life.</p>
 
             <p className="text-lg leading-relaxed text-gray-500 max-w-3xl mx-auto">Every piece tells a story, crafted with meticulous attention to detail, sustainable practices, and timeless elegance that transcends seasons.</p>
           </div>
@@ -105,7 +105,7 @@ export default function Home() {
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-light mb-3 text-gray-800">Ethereal Spring</h3>
-                  <p className="text-gray-600 leading-relaxed mb-4">Delicate fabrics meet bold silhouettes in this collection inspired by nature's awakening.</p>
+                  <p className="text-gray-600 leading-relaxed mb-4">Delicate fabrics meet bold silhouettes in this collection inspired by nature&apos;s awakening.</p>
                   <div className="flex items-center text-rose-600 group-hover:text-rose-700 transition-colors">
                     <span className="text-sm font-medium mr-2">View Collection</span>
                     <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -206,7 +206,7 @@ export default function Home() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-gray-600 mb-12 max-w-3xl mx-auto">Ready to bring your fashion vision to life? Let's collaborate on your next project.</p>
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-gray-600 mb-12 max-w-3xl mx-auto">Ready to bring your fashion vision to life? Let&apos;s collaborate on your next project.</p>
 
             <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
               <Link

@@ -201,7 +201,7 @@ const PortfolioPage = () => {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
 
-            <p className="text-xl font-light text-gray-600 mb-12 max-w-2xl mx-auto">Let's collaborate to create something extraordinary that reflects your unique vision.</p>
+            <p className="text-xl font-light text-gray-600 mb-12 max-w-2xl mx-auto">Let&apos;s collaborate to create something extraordinary that reflects your unique vision.</p>
 
             <Link
               href="/contact"

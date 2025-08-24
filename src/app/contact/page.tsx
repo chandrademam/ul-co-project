@@ -1,26 +1,26 @@
 "use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
     // You can add form submission logic here
   };
 
@@ -47,7 +47,7 @@ const ContactPage = () => {
               <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">Let's collaborate on your next fashion project. I'd love to hear your vision and bring it to life.</p>
+            <p className="text-xl md:text-2xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">Let&apos;s collaborate on your next fashion project. I&apos;d love to hear your vision and bring it to life.</p>
           </div>
         </div>
       </section>
@@ -261,7 +261,7 @@ const ContactPage = () => {
           <div className="max-w-4xl mx-auto space-y-6">
             <div className="animate-fade-in-scroll delay-100">
               <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-xl font-medium mb-4 text-gray-800">What's your design process like?</h3>
+                <h3 className="text-xl font-medium mb-4 text-gray-800">What&apos;s your design process like?</h3>
                 <p className="text-gray-600 leading-relaxed">
                   My design process begins with understanding your vision and requirements. We start with concept development, create detailed sketches, select materials, and move through prototyping to final production. Each project
                   typically takes 4-12 weeks depending on complexity.
