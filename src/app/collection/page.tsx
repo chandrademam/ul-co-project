@@ -7,3 +7,5 @@ interface CollectionLayoutProps {
 export default function CollectionLayout({ children }: CollectionLayoutProps) {
   return <>{children}</>;
 }
+
+// styles
