@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // Collection data
 const collections = {
@@ -73,17 +73,40 @@ const getColorClasses = (color: string) => {
   return colorMap[color as keyof typeof colorMap] || colorMap.rose;
 };
 
+// Updated interface for Next.js 15
 interface CollectionPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 export default function CollectionPage({ params }: CollectionPageProps) {
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectedSize, setSelectedSize] = useState("");
+  const [slug, setSlug] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(true);
 
-  const collection = collections[params.slug as keyof typeof collections];
+  // Handle async params in useEffect for client component
+  useEffect(() => {
+    const getParams = async () => {
+      const resolvedParams = await params;
+      setSlug(resolvedParams.slug);
+      setIsLoading(false);
+    };
+
+    getParams();
+  }, [params]);
+
+  // Show loading while resolving params
+  if (isLoading) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50 flex items-center justify-center">
+        <div className="animate-pulse text-gray-600">Loading...</div>
+      </div>
+    );
+  }
+
+  const collection = collections[slug as keyof typeof collections];
 
   if (!collection) {
     notFound();
