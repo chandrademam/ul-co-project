@@ -24,51 +24,12 @@ export default function ButetDetailPage() {
   const collections: CollectionItem[] = [
     {
       id: 1,
-      name: "Butet Heritage Dress",
+      name: "Outer Pucca",
       image: "/image/butet/butet.jpeg",
-      description: "Dress modern dengan aplikasi ulos pucca yang menggambarkan kekuatan perempuan Batak dalam interpretasi contemporary fashion yang bold dan elegant",
+      description:
+        "Outer elegan dengan desain modern dan sentuhan etnik. Dibuat dari bahan berkualitas, dihias detail payet eksklusif yang memberi kilau mewah tanpa berlebihan. Cocok untuk acara formal, pesta, atau momen spesial yang ingin menonjolkan gaya anggun dengan identitas budaya.",
       category: "Ready-to-Wear",
       concept: "Feminine Power",
-    },
-    {
-      id: 2,
-      name: "Traditional Fusion Jacket",
-      image: "/image/butet/butet.jpeg",
-      description: "Blazer struktural yang mengintegrasikan motif tenun tradisional dengan cutting edge tailoring, menciptakan statement piece untuk modern professional woman",
-      category: "Outerwear",
-      concept: "Cultural Authority",
-    },
-    {
-      id: 3,
-      name: "Ceremonial Evening Gown",
-      image: "/image/butet/butet.jpeg",
-      description: "Gaun malam yang mengangkat filosofi ulos sebagai simbol perlindungan, dengan draping dan konstruksi yang menghormati tradisi dalam bahasa fashion haute couture",
-      category: "Evening Wear",
-      concept: "Sacred Elegance",
-    },
-    {
-      id: 4,
-      name: "Contemporary Wrap Set",
-      image: "/image/butet/butet.jpeg",
-      description: "Set koordinat yang terinspirasi dari cara pemakaian ulos tradisional, diinterpretasi dalam siluet modern dengan emphasize pada layering dan texture play",
-      category: "Coordinated Set",
-      concept: "Modern Ritual",
-    },
-    {
-      id: 5,
-      name: "Minimalist Statement Coat",
-      image: "/image/butet/butet.jpeg",
-      description: "Coat dengan pendekatan minimalis yang mempertahankan essence cultural heritage melalui detail konstruksi dan pemilihan material yang sophisticated",
-      category: "Outerwear",
-      concept: "Quiet Strength",
-    },
-    {
-      id: 6,
-      name: "Bridal Heritage Collection",
-      image: "/image/butet/butet.jpeg",
-      description: "Koleksi bridal yang menghubungkan generasi melalui reinterpretasi ulos dalam konteks pernikahan modern, mempertahankan makna spiritual dalam estetika contemporary",
-      category: "Bridal",
-      concept: "Eternal Bond",
     },
   ];
 
@@ -117,7 +78,7 @@ export default function ButetDetailPage() {
 
             <div className="flex justify-center items-center space-x-8 text-sm text-yellow-200 mt-8">
               <div className="text-center">
-                <div className="font-bold text-2xl">6</div>
+                <div className="font-bold text-2xl">1</div>
                 <div>Signature Pieces</div>
               </div>
               <div className="h-8 w-px bg-yellow-300/50"></div>

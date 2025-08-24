@@ -26,7 +26,7 @@ const navLinks: NavLink[] = [
 
 const socialLinks: SocialLink[] = [
   { href: "https://twitter.com", label: "Twitter", Icon: FaTwitter },
-  { href: "https://instagram.com", label: "Instagram", Icon: FaInstagram },
+  { href: "https://instagram.com/ul.co_tarulipasaribu/", label: "Instagram", Icon: FaInstagram },
   { href: "https://linkedin.com", label: "LinkedIn", Icon: FaLinkedin },
 ];
 
@@ -71,7 +71,7 @@ const Footer = () => {
 
         {/* Teks Bawah */}
         <div className="text-center text-sm text-white/70">
-          Built with <span className="animate-pulse text-[#ff8a99]">❤️</span> by UL.CO Studio
+          Built with <span className="animate-pulse text-[#ff8a99]">❤️</span> by UL.CO
         </div>
       </div>
     </footer>

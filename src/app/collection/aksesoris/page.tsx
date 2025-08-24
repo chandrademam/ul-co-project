@@ -23,45 +23,51 @@ export default function AksesorisDetailPage() {
   const collections: CollectionItem[] = [
     {
       id: 1,
-      name: "Heritage Statement Necklace",
-      image: "/image/aksesoris.jpeg",
-      description: "Kalung statement yang memadukan motif ulos tradisional dengan desain kontemporer, menciptakan aksen bold untuk outfit modern",
-      category: "Necklace",
+      name: "Anting Bulat Mini",
+      image: "/image/aksesoris/1.jpg",
+      description:
+        "Aksesoris UL.CO lahir dari sisa pembuatan koleksi utama. Setiap potongan kain diolah kembali menjadi karya luar biasa dengan konsep zero waste, menghadirkan desain unik sekaligus menjaga keberlanjutan. Dengan UL.CO, fashion tak hanya indah, tapi juga penuh makna.",
+      category: "Anting",
     },
     {
       id: 2,
-      name: "Contemporary Drop Earrings",
-      image: "/image/aksesoris.jpeg",
-      description: "Anting gantung dengan siluet geometris yang terinspirasi dari pola tenun ulos, memberikan sentuhan elegan dan artistic",
-      category: "Earrings",
+      name: "Kalung Sibolang Mutiara",
+      image: "/image/aksesoris/2.jpg",
+      description:
+        "Aksesoris UL.CO lahir dari sisa pembuatan koleksi utama. Setiap potongan kain diolah kembali menjadi karya luar biasa dengan konsep zero waste, menghadirkan desain unik sekaligus menjaga keberlanjutan. Dengan UL.CO, fashion tak hanya indah, tapi juga penuh makna.",
+      category: "Kalung",
     },
     {
       id: 3,
-      name: "Woven Cuff Bracelet",
-      image: "/image/aksesoris.jpeg",
-      description: "Gelang cuff dengan detail tenun miniatur yang menggambarkan kekayaan tekstil tradisional dalam bentuk aksesoris modern",
-      category: "Bracelet",
+      name: "Kalung Susun Sibolang",
+      image: "/image/aksesoris/3.jpg",
+      description:
+        "Aksesoris UL.CO lahir dari sisa pembuatan koleksi utama. Setiap potongan kain diolah kembali menjadi karya luar biasa dengan konsep zero waste, menghadirkan desain unik sekaligus menjaga keberlanjutan. Dengan UL.CO, fashion tak hanya indah, tapi juga penuh makna.",
+      category: "Kalung",
     },
     {
       id: 4,
-      name: "Cultural Fusion Brooch",
-      image: "/image/aksesoris.jpeg",
-      description: "Bros dengan desain fusion yang mengangkat filosofi ulos sebagai simbol perlindungan dalam interpretasi fashion contemporary",
-      category: "Brooch",
+      name: "Kalung Pom-Pom Sibolang",
+      image: "/image/aksesoris/4.jpg",
+      description:
+        "Aksesoris UL.CO lahir dari sisa pembuatan koleksi utama. Setiap potongan kain diolah kembali menjadi karya luar biasa dengan konsep zero waste, menghadirkan desain unik sekaligus menjaga keberlanjutan. Dengan UL.CO, fashion tak hanya indah, tapi juga penuh makna.",
+      category: "Kalung",
     },
     {
       id: 5,
-      name: "Minimalist Ring Collection",
-      image: "/image/aksesoris.jpeg",
-      description: "Cincin dengan pendekatan minimalis yang tetap mempertahankan esensi cultural heritage melalui detail tekstur dan finishing",
-      category: "Ring",
+      name: "Kaling Mutiara Abu",
+      image: "/image/aksesoris/5.jpg",
+      description:
+        "Aksesoris UL.CO lahir dari sisa pembuatan koleksi utama. Setiap potongan kain diolah kembali menjadi karya luar biasa dengan konsep zero waste, menghadirkan desain unik sekaligus menjaga keberlanjutan. Dengan UL.CO, fashion tak hanya indah, tapi juga penuh makna.",
+      category: "Kalung",
     },
     {
       id: 6,
-      name: "Complete Heritage Set",
-      image: "/image/aksesoris.jpeg",
-      description: "Koleksi lengkap yang menceritakan narasi budaya Batak melalui harmoni desain, warna, dan tekstur dalam satu kesatuan estetika",
-      category: "Complete Set",
+      name: "Kalung Kristal",
+      image: "/image/aksesoris/6.jpg",
+      description:
+        "Aksesoris UL.CO lahir dari sisa pembuatan koleksi utama. Setiap potongan kain diolah kembali menjadi karya luar biasa dengan konsep zero waste, menghadirkan desain unik sekaligus menjaga keberlanjutan. Dengan UL.CO, fashion tak hanya indah, tapi juga penuh makna.",
+      category: "Kalung",
     },
   ];
 

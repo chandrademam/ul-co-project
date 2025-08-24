@@ -54,8 +54,8 @@ const PortfolioPage = () => {
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="animate-fade-in">
             <h1 className="text-5xl md:text-4xl font-extralight leading-tight mb-8 tracking-wide text-white">
-              Koleksi
-              <span className="block text-3xl md:text-8xl font-light text-[#f8c85c] font-[var(--font-script)]">Fashion</span>
+              Halo Dongan
+              <span className="block text-3xl md:text-8xl font-light text-[#f8c85c] font-[var(--font-script)]">UL.CO</span>
             </h1>
 
             <div className="flex items-center justify-center space-x-4 mb-12">
@@ -64,7 +64,10 @@ const PortfolioPage = () => {
               <div className="h-px w-16 bg-white/40"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">Jelajahi seluruh koleksi desain fashion saya—dari sketsa konsep hingga karya yang siap melangkah di runway.</p>
+            <p className="text-xl md:text-2xl font-light text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">
+              UL.CO, merayakan slow fashion dengan desain yang abadi. Dari sisa jadi makna, setiap karya terlahir lewat konsep zero waste yang berkelanjutan.
+            </p>
+            <p className="text-xl md:text-2xl font-light text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">#ULCOberDampak</p>
           </div>
         </div>
       </section>

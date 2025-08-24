@@ -66,9 +66,12 @@ export default function Home() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-white"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light leading-relaxed text-[#fbeaec] mb-8">Fashion is more than clothing—it’s a language of self-expression, a bridge between art and life.</p>
+            <p className="text-xl md:text-2xl font-light leading-relaxed text-[#fbeaec] mb-8">WARISAN ELEGAN KEINDAHAN ABADI</p>
 
-            <p className="text-lg leading-relaxed text-[#f8d4d8] max-w-3xl mx-auto">Every piece tells a story, crafted with meticulous attention to detail, sustainable practices, and timeless elegance that transcends seasons.</p>
+            <p className="text-lg leading-relaxed text-[#f8d4d8] max-w-3xl mx-auto">
+              UL.CO menghadirkan fashion berbasis kain ulos,mengenakan warisan budaya suku Batak dalam keseharian. Melalui pendekatan sustainable fashion, UL.CO memastikan setiap produk ramah lingkungan melalui konsep Zero Waste,
+              pemanfaatan limbah tenun, serta pewarnaan alami.
+            </p>
           </div>
         </div>
       </section>
@@ -88,17 +91,17 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Collection 1 */}
-            <Link href="/collection/ethereal-spring" className="group animate-fade-in-scroll delay-100">
+            <Link href="/collection/marparbuei" className="group animate-fade-in-scroll delay-100">
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:scale-105">
                 <div className="relative overflow-hidden">
                   <Image src="/image/marparbuei.jpg" alt="Ethereal Spring Collection" width={500} height={600} className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <div className="absolute top-4 left-4">
-                    <span className="inline-block bg-white/90 backdrop-blur-sm text-gray-800 text-sm px-4 py-2 rounded-full font-medium">Marparbue Collection</span>
+                    <span className="inline-block bg-white/90 backdrop-blur-sm text-gray-800 text-sm px-4 py-2 rounded-full font-medium">Marparbuei Collection</span>
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-light mb-3 text-gray-800">Marparbue Collection</h3>
+                  <h3 className="text-2xl font-light mb-3 text-gray-800">Marparbuei Collection</h3>
                   <p className="text-gray-600 leading-relaxed mb-4">
                     Marparbuei,sebuah perjalanan budaya yang dituangkan ke dalam karya busana etnik modern. Tunjukkan keanggunan tradisi dengan cara baru! Jangan tunggu lagi, miliki koleksi ini sekarang juga! Pesan dengan mudah melalui
                     WhatsApp atau temukan kami di Shopee untuk pengalaman belanja yang praktis dan menyenangkan.
@@ -114,7 +117,7 @@ export default function Home() {
             </Link>
 
             {/* Collection 2 */}
-            <Link href="/collection/urban-minimalist" className="group animate-fade-in-scroll delay-200">
+            <Link href="/collection/butet" className="group animate-fade-in-scroll delay-200">
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:scale-105">
                 <div className="relative overflow-hidden">
                   <Image src="/image/butet.jpg" alt="Urban Minimalist Collection" width={500} height={600} className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -140,7 +143,7 @@ export default function Home() {
             </Link>
 
             {/* Collection 3 */}
-            <Link href="/collection/avant-garde-evening" className="group animate-fade-in-scroll delay-300">
+            <Link href="/collection/aksesoris" className="group animate-fade-in-scroll delay-300">
               <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transform transition-all duration-500 hover:scale-105">
                 <div className="relative overflow-hidden">
                   <Image src="/image/aksesoris.jpeg" alt="Avant-Garde Evening Collection" width={500} height={600} className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700" />

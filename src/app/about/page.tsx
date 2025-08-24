@@ -16,7 +16,7 @@ const AboutPage = () => {
           <div className="animate-fade-in">
             <h1 className="text-6xl md:text-2xl font-extralight leading-tight mb-8 tracking-wide text-gray-800">
               Tentang
-              <span className="block text-5xl md:text-6xl mt-2 bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-transparent" style={{ fontFamily: "'Alex Brush', cursive" }}>
+              <span className="block text-5xl md:text-8xl mt-2 bg-[#931f28] bg-clip-text text-transparent" style={{ fontFamily: "'Alex Brush', cursive" }}>
                 Taruli Pasaribu
               </span>
             </h1>
@@ -50,7 +50,7 @@ const AboutPage = () => {
                 {/* Floating stats */}
                 <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
                   <div className="text-center">
-                    <div className="text-3xl font-light text-[#921e27] mb-1">2+</div>
+                    <div className="text-3xl font-light text-[#921e27] mb-1">6+</div>
                     <div className="text-sm text-gray-600">Years Experience</div>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ const AboutPage = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Fashion Innovation Award</h3>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Fashion show bersama Dekranasda</h3>
                 <p className="text-sm text-gray-600">2023</p>
               </div>
             </div>
@@ -205,8 +205,8 @@ const AboutPage = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Sustainability Champion</h3>
-                <p className="text-sm text-gray-600">2022</p>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Lolos Inkubator Bisnis Kementerian Perindustrian</h3>
+                <p className="text-sm text-gray-600">2024</p>
               </div>
             </div>
 
@@ -218,8 +218,8 @@ const AboutPage = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Rising Designer</h3>
-                <p className="text-sm text-gray-600">2021</p>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Lolos Binaan Wirusaha Unggulan Bank Indonesia</h3>
+                <p className="text-sm text-gray-600">2025</p>
               </div>
             </div>
 
@@ -231,8 +231,8 @@ const AboutPage = () => {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Best Graduate Collection</h3>
-                <p className="text-sm text-gray-600">2016</p>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Juara 3 Lomba Wirausaha Muda </h3>
+                <p className="text-sm text-gray-600">2025</p>
               </div>
             </div>
           </div>
@@ -260,7 +260,7 @@ const AboutPage = () => {
             <div className="space-y-4 sm:space-y-0 sm:space-x-6 sm:flex sm:justify-center">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-600 text-white font-medium py-4 px-8 rounded-full hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-rose-300/50">
+                className="inline-flex items-center justify-center bg-[#931f28] text-white font-medium py-4 px-8 rounded-full hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-rose-300/50">
                 <span className="mr-2">Get in Touch</span>
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
