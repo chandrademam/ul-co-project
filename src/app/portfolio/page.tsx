@@ -8,7 +8,7 @@ const portfolioItems = [
     description: "Marparbuei,sebuah perjalanan budaya yang dituangkan ke dalam karya busana etnik modern.",
     image: "/image/marparbuei.jpg",
     color: "rose",
-    slug: "ethereal-spring",
+    slug: "marparbuei",
   },
   {
     title: "Butet",
@@ -16,7 +16,7 @@ const portfolioItems = [
     description: "Koleksi terbaru dari UL.CO yang memadukan kekuatan perempuan dengan keindahan kain ulos pucca.",
     image: "/image/butet.jpg",
     color: "blue",
-    slug: "urban-minimalist",
+    slug: "butet",
   },
   {
     title: "Aksesoris",
@@ -24,7 +24,7 @@ const portfolioItems = [
     description: "Koleksi Dramatic statements and luxurious textures for evening wear",
     image: "/image/aksesoris.jpeg",
     color: "purple",
-    slug: "avant-garde-evening",
+    slug: "aksesoris",
   },
 ];
 
