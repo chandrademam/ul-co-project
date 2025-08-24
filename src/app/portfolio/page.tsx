@@ -3,52 +3,28 @@ import Link from "next/link";
 
 const portfolioItems = [
   {
-    title: "Ethereal Spring",
-    category: "Spring Collection 2024",
-    description: "Delicate fabrics meet bold silhouettes in nature-inspired designs",
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=2574&auto=format&fit=crop",
+    title: "Marparbuei",
+    category: "Marparbuei Collection",
+    description: "Marparbuei,sebuah perjalanan budaya yang dituangkan ke dalam karya busana etnik modern.",
+    image: "/image/marparbuei.jpg",
     color: "rose",
     slug: "ethereal-spring",
   },
   {
-    title: "Urban Minimalist",
-    category: "Summer Collection 2024",
-    description: "Clean lines and sustainable materials for modern city living",
-    image: "https://images.unsplash.com/photo-1581044777550-4cfa6ce6708f?q=80&w=2574&auto=format&fit=crop",
+    title: "Butet",
+    category: "Butet Collection",
+    description: "Koleksi terbaru dari UL.CO yang memadukan kekuatan perempuan dengan keindahan kain ulos pucca.",
+    image: "/image/butet.jpg",
     color: "blue",
     slug: "urban-minimalist",
   },
   {
-    title: "Avant-Garde Evening",
-    category: "Fall Collection 2024",
-    description: "Dramatic statements and luxurious textures for evening wear",
-    image: "https://images.unsplash.com/photo-1551803091-e2ab682b5185?q=80&w=2574&auto=format&fit=crop",
+    title: "Aksesoris",
+    category: "Koleksi Aksesoris",
+    description: "Koleksi Dramatic statements and luxurious textures for evening wear",
+    image: "/image/aksesoris.jpeg",
     color: "purple",
     slug: "avant-garde-evening",
-  },
-  {
-    title: "Timeless Classics",
-    category: "Signature Pieces",
-    description: "Heritage designs reimagined for contemporary wardrobes",
-    image: "https://images.unsplash.com/photo-1492707892479-7486c25655d4?q=80&w=2574&auto=format&fit=crop",
-    color: "amber",
-    slug: "timeless-classics",
-  },
-  {
-    title: "Monochrome Mood",
-    category: "Art Direction",
-    description: "Exploring contrast and texture in black and white",
-    image: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2574&auto=format&fit=crop",
-    color: "gray",
-    slug: "monochrome-mood",
-  },
-  {
-    title: "Street Couture",
-    category: "Urban Collection",
-    description: "High fashion meets streetwear in unexpected combinations",
-    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2574&auto=format&fit=crop",
-    color: "emerald",
-    slug: "street-couture",
   },
 ];
 
@@ -68,27 +44,27 @@ const PortfolioPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-rose-50 via-white to-amber-50">
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-br from-white via-rose-50 to-purple-50 relative overflow-hidden">
+      <section className="pt-32 pb-16 bg-[#921e27] relative overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-20 left-10 w-64 h-64 bg-gradient-to-br from-rose-200/30 to-pink-300/30 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute top-40 right-20 w-48 h-48 bg-gradient-to-br from-amber-200/30 to-orange-300/30 rounded-full blur-3xl animate-float delay-1000"></div>
-          <div className="absolute bottom-20 left-1/3 w-32 h-32 bg-gradient-to-br from-purple-200/30 to-indigo-300/30 rounded-full blur-3xl animate-float delay-2000"></div>
+          <div className="absolute top-20 left-10 w-64 h-64 bg-[#7a1a21]/30 rounded-full blur-3xl animate-float"></div>
+          <div className="absolute top-40 right-20 w-48 h-48 bg-[#5e0e15]/30 rounded-full blur-3xl animate-float delay-1000"></div>
+          <div className="absolute bottom-20 left-1/3 w-32 h-32 bg-[#921e27]/30 rounded-full blur-3xl animate-float delay-2000"></div>
         </div>
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="animate-fade-in">
-            <h1 className="text-5xl md:text-7xl font-extralight leading-tight mb-8 tracking-wide text-gray-800">
-              Fashion
-              <span className="block text-3xl md:text-4xl font-light bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-transparent">Collections</span>
+            <h1 className="text-5xl md:text-4xl font-extralight leading-tight mb-8 tracking-wide text-white">
+              Koleksi
+              <span className="block text-3xl md:text-8xl font-light text-[#f8c85c] font-[var(--font-script)]">Fashion</span>
             </h1>
 
             <div className="flex items-center justify-center space-x-4 mb-12">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent to-rose-400"></div>
-              <div className="w-3 h-3 bg-rose-400 rounded-full"></div>
-              <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-400"></div>
+              <div className="h-px w-16 bg-white/40"></div>
+              <div className="w-3 h-3 bg-white rounded-full"></div>
+              <div className="h-px w-16 bg-white/40"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">Explore my complete collection of fashion designs, from concept sketches to runway pieces.</p>
+            <p className="text-xl md:text-2xl font-light text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">Jelajahi seluruh koleksi desain fashion saya—dari sketsa konsep hingga karya yang siap melangkah di runway.</p>
           </div>
         </div>
       </section>
@@ -97,11 +73,10 @@ const PortfolioPage = () => {
       <section className="py-8 bg-white/80 backdrop-blur-sm border-y border-rose-100">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-center gap-4">
-            <button className="px-6 py-2 bg-gradient-to-r from-rose-500 to-pink-600 text-white rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg">All Collections</button>
-            <button className="px-6 py-2 bg-white border-2 border-gray-200 text-gray-700 rounded-full font-medium hover:border-rose-300 hover:text-rose-600 transition-all duration-300 hover:scale-105">Spring 2024</button>
-            <button className="px-6 py-2 bg-white border-2 border-gray-200 text-gray-700 rounded-full font-medium hover:border-rose-300 hover:text-rose-600 transition-all duration-300 hover:scale-105">Summer 2024</button>
-            <button className="px-6 py-2 bg-white border-2 border-gray-200 text-gray-700 rounded-full font-medium hover:border-rose-300 hover:text-rose-600 transition-all duration-300 hover:scale-105">Evening Wear</button>
-            <button className="px-6 py-2 bg-white border-2 border-gray-200 text-gray-700 rounded-full font-medium hover:border-rose-300 hover:text-rose-600 transition-all duration-300 hover:scale-105">Signature</button>
+            <button className="px-6 py-2 bg-[#921e27] text-white rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg">All Collections</button>
+            <button className="px-6 py-2 bg-white border-2 border-gray-200 text-gray-700 rounded-full font-medium hover:border-[#921e27] hover:text-[#921e27] transition-all duration-300 hover:scale-105">Marparbuei</button>
+            <button className="px-6 py-2 bg-white border-2 border-gray-200 text-gray-700 rounded-full font-medium hover:border-[#921e27] hover:text-[#921e27] transition-all duration-300 hover:scale-105">Butet</button>
+            <button className="px-6 py-2 bg-white border-2 border-gray-200 text-gray-700 rounded-full font-medium hover:border-[#921e27] hover:text-[#921e27] transition-all duration-300 hover:scale-105">Aksesoris</button>
           </div>
         </div>
       </section>
@@ -121,7 +96,7 @@ const PortfolioPage = () => {
                       <div className="absolute bottom-6 left-6 right-6">
                         <Link
                           href={`/collection/${item.slug}`}
-                          className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${getColorClasses(
+                          className={`inline-flex items-center px-4 py-2 bg-[#921e27] ${getColorClasses(
                             item.color
                           )} text-white rounded-full text-sm font-medium mb-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300`}>
                           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,11 +115,11 @@ const PortfolioPage = () => {
                   </div>
 
                   <div className="p-8">
-                    <h3 className="text-2xl font-light mb-3 text-gray-800 group-hover:text-rose-600 transition-colors duration-300">{item.title}</h3>
+                    <h3 className="text-2xl font-light mb-3 text-gray-800 group-hover:text-[#921e27] transition-colors duration-300">{item.title}</h3>
                     <p className="text-gray-600 leading-relaxed mb-6">{item.description}</p>
 
                     <div className="flex items-center justify-between">
-                      <Link href={`/collection/${item.slug}`} className="flex items-center text-rose-600 group-hover:text-rose-700 transition-colors">
+                      <Link href={`/collection/${item.slug}`} className="flex items-center text-[#921e27] group-hover:text-[#921e27] transition-colors">
                         <span className="text-sm font-medium mr-2">Explore Collection</span>
                         <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -178,19 +153,6 @@ const PortfolioPage = () => {
       </section>
 
       {/* Load More Section */}
-      <section className="py-16 bg-gradient-to-r from-rose-100 via-white to-amber-100">
-        <div className="container mx-auto px-4 text-center">
-          <div className="animate-fade-in-scroll">
-            <p className="text-lg text-gray-600 mb-8">More collections coming soon. Stay tuned for exciting new designs.</p>
-            <button className="inline-flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-white font-medium py-4 px-12 rounded-full hover:from-gray-900 hover:to-black transition-all duration-300 transform hover:scale-105 shadow-xl">
-              <span className="mr-2">Load More Collections</span>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-white via-rose-50 to-purple-50 relative overflow-hidden">
@@ -212,7 +174,7 @@ const PortfolioPage = () => {
 
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center bg-gradient-to-r from-rose-500 to-pink-600 text-white font-medium py-4 px-8 rounded-full hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-rose-300/50">
+              className="inline-flex items-center justify-center bg-[#921e27] text-white font-medium py-4 px-8 rounded-full hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-rose-300/50">
               <span className="mr-2">Start a Project</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2 2v10a2 2 0 002 2z" />

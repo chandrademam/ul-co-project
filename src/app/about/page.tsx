@@ -14,9 +14,11 @@ const AboutPage = () => {
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-extralight leading-tight mb-8 tracking-wide text-gray-800">
-              About
-              <span className="block text-3xl md:text-4xl font-light bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-transparent mt-2">The Designer</span>
+            <h1 className="text-6xl md:text-2xl font-extralight leading-tight mb-8 tracking-wide text-gray-800">
+              Tentang
+              <span className="block text-5xl md:text-6xl mt-2 bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-transparent" style={{ fontFamily: "'Alex Brush', cursive" }}>
+                Taruli Pasaribu
+              </span>
             </h1>
 
             <div className="flex items-center justify-center space-x-4 mb-8">
@@ -25,32 +27,35 @@ const AboutPage = () => {
               <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
 
-            <p className="text-xl md:text-2xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">Crafting tomorrow&apos;s fashion through timeless elegance and sustainable innovation.</p>
+            <p className="text-xl md:text-xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Taruli Pasaribu is a visionary fashion designer and the founder of UL.CO Taruli Pasaribu, a brand that blends bold creativity with timeless elegance. With a strong presence in the Indonesian fashion scene, Taruli is also the
+              creative force behind @fashion.design.siantar, where she nurtures emerging talent and promotes local design excellence.
+            </p>
           </div>
         </div>
       </section>
 
       {/* Designer Profile Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-rose-50 relative">
+      <section className="py-20 bg-gradient-to-b from-[#921e27] to-[#5e0e15] relative text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
             {/* Image Side */}
             <div className="animate-fade-in-scroll">
               <div className="relative">
-                <div className="absolute -top-6 -left-6 w-full h-full bg-gradient-to-br from-rose-200 to-pink-300 rounded-3xl opacity-20"></div>
+                <div className="absolute -top-6 -left-6 w-full h-full bg-gradient-to-br from-[#7a1a21] to-[#921e27] rounded-3xl opacity-30"></div>
                 <div className="relative bg-white rounded-3xl overflow-hidden shadow-2xl">
-                  <Image src="https://images.unsplash.com/photo-1494790108755-2616c6106635?q=80&w=2574&auto=format&fit=crop" alt="Fashion Designer Portrait" width={600} height={700} className="w-full h-96 lg:h-[500px] object-cover" />
+                  <Image src="/image/uli.jpg" alt="Fashion Designer Portrait" width={600} height={700} className="w-full h-96 lg:h-[500px] object-cover object-[0_20%]" />
                 </div>
 
                 {/* Floating stats */}
                 <div className="absolute -bottom-6 -right-6 bg-white rounded-2xl p-6 shadow-xl">
                   <div className="text-center">
-                    <div className="text-3xl font-light text-gray-800 mb-1">8+</div>
+                    <div className="text-3xl font-light text-[#921e27] mb-1">2+</div>
                     <div className="text-sm text-gray-600">Years Experience</div>
                   </div>
                 </div>
 
-                <div className="absolute top-8 -right-4 bg-gradient-to-r from-rose-500 to-pink-600 text-white rounded-2xl p-4 shadow-xl">
+                <div className="absolute top-8 -right-4 bg-gradient-to-r from-[#921e27] to-[#7a1a21] text-white rounded-2xl p-4 shadow-xl">
                   <div className="text-center">
                     <div className="text-2xl font-light mb-1">100+</div>
                     <div className="text-xs">Designs Created</div>
@@ -63,36 +68,34 @@ const AboutPage = () => {
             <div className="animate-fade-in-scroll">
               <div className="space-y-8">
                 <div>
-                  <h2 className="text-4xl md:text-5xl font-light mb-6 text-gray-800 tracking-wide">Meet Sarah Chen</h2>
-                  <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                    A visionary fashion designer with over 8 years of experience creating extraordinary pieces that blend contemporary aesthetics with sustainable practices. Based in New York, Sarah has worked with leading fashion houses
-                    and independent brands worldwide.
-                  </p>
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    Her design philosophy centers on the belief that fashion should be both beautiful and responsible, creating timeless pieces that transcend seasonal trends while respecting our planet.
+                  <h2 className="text-4xl md:text-5xl font-light mb-6 tracking-wide text-white">Taruli Pasaribu</h2>
+                  <p className="text-lg leading-relaxed mb-6 text-neutral-200">Setiap benang adalah warisan. Setiap motif adalah cerita. Setiap karya adalah penghormatan.</p>
+                  <p className="text-lg leading-relaxed text-neutral-200">
+                    Sebagai desainer dari Tanah Batak, Taruli Pasaribu menjadikan ulos bukan sekadar kain, melainkan simbol identitas, kekuatan, dan kasih sayang. Filosofi desainnya berakar pada nilai-nilai leluhur, namun tumbuh dalam
+                    semangat inovasi dan keberlanjutan.
                   </p>
                 </div>
 
                 {/* Achievement highlights */}
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-                    <div className="w-12 h-12 bg-gradient-to-r from-rose-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#921e27] to-[#7a1a21] rounded-full flex items-center justify-center mx-auto mb-4">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                     </div>
-                    <div className="text-2xl font-light text-gray-800 mb-1">Award Winner</div>
-                    <div className="text-sm text-gray-600">Fashion Innovation 2023</div>
+                    <div className="text-2xl font-light text-[#921e27] mb-1">Juara 2</div>
+                    <div className="text-sm text-gray-600">Desain Wastra Tapanuli</div>
                   </div>
 
                   <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-                    <div className="w-12 h-12 bg-gradient-to-r from-amber-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-r from-[#7a1a21] to-[#5e0e15] rounded-full flex items-center justify-center mx-auto mb-4">
                       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                       </svg>
                     </div>
-                    <div className="text-2xl font-light text-gray-800 mb-1">Global Reach</div>
-                    <div className="text-sm text-gray-600">15+ Countries</div>
+                    <div className="text-2xl font-light text-[#921e27] mb-1">Juara 3</div>
+                    <div className="text-sm text-gray-600">Toba Jou Jou 2025</div>
                   </div>
                 </div>
               </div>
@@ -111,7 +114,7 @@ const AboutPage = () => {
               <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
             </div>
-            <p className="text-xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">Every design tells a story, every fabric holds a purpose, every stitch carries intention.</p>
+            <p className="text-xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">Setiap benang adalah warisan. Setiap motif adalah cerita. Setiap karya adalah penghormatan.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -123,8 +126,10 @@ const AboutPage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-light mb-4 text-gray-800 text-center">Sustainability</h3>
-                <p className="text-gray-600 text-center leading-relaxed">Creating beautiful fashion while respecting our environment through eco-friendly materials and ethical production.</p>
+                <h3 className="text-2xl font-light mb-4 text-gray-800 text-center">Cultural Integrity</h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  Mengangkat kekayaan tekstil Batak melalui eksplorasi motif ulos yang autentik, Taruli merancang dengan rasa hormat terhadap tradisi, menjadikannya relevan di panggung mode global.
+                </p>
               </div>
             </div>
 
@@ -141,8 +146,10 @@ const AboutPage = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-light mb-4 text-gray-800 text-center">Innovation</h3>
-                <p className="text-gray-600 text-center leading-relaxed">Pushing creative boundaries through experimental techniques, cutting-edge technology, and bold artistic vision.</p>
+                <h3 className="text-2xl font-light mb-4 text-gray-800 text-center"> Sustainable Craftsmanship</h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  Setiap koleksi dibuat dengan pendekatan ramah lingkungan—menggunakan bahan alami, teknik pewarnaan tradisional, dan produksi etis yang memberdayakan pengrajin lokal.
+                </p>
               </div>
             </div>
 
@@ -154,8 +161,8 @@ const AboutPage = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-light mb-4 text-gray-800 text-center">Timelessness</h3>
-                <p className="text-gray-600 text-center leading-relaxed">Designing pieces that transcend trends, creating lasting elegance that remains relevant through changing seasons.</p>
+                <h3 className="text-2xl font-light mb-4 text-gray-800 text-center">Timeless Innovation</h3>
+                <p className="text-gray-600 text-center leading-relaxed">Taruli memadukan siluet kontemporer dengan tekstur ulos yang khas, menciptakan busana yang tak lekang oleh waktu namun tetap berani bereksperimen secara artistik.</p>
               </div>
             </div>
           </div>
@@ -163,131 +170,69 @@ const AboutPage = () => {
       </section>
 
       {/* Experience Timeline */}
-      <section className="py-20 bg-gradient-to-b from-white to-rose-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in-scroll">
-            <h2 className="text-4xl md:text-5xl font-light mb-8 text-gray-800 tracking-wide">Journey & Experience</h2>
-            <div className="flex items-center justify-center space-x-4 mb-8">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-rose-400"></div>
-              <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
-            </div>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-1/2 transform -translate-x-0.5 w-0.5 h-full bg-gradient-to-b from-rose-400 via-amber-400 to-purple-400"></div>
-
-              <div className="space-y-16">
-                {/* Timeline Item 1 */}
-                <div className="animate-fade-in-scroll delay-100">
-                  <div className="flex items-center">
-                    <div className="flex-1 text-right pr-8">
-                      <div className="bg-white rounded-2xl p-6 shadow-lg">
-                        <h3 className="text-xl font-light mb-2 text-gray-800">Fashion Institute Graduate</h3>
-                        <p className="text-gray-600 mb-2">Parsons School of Design, New York</p>
-                        <span className="text-sm text-rose-600 font-medium">2016</span>
-                      </div>
-                    </div>
-                    <div className="w-4 h-4 bg-rose-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                    <div className="flex-1 pl-8"></div>
-                  </div>
-                </div>
-
-                {/* Timeline Item 2 */}
-                <div className="animate-fade-in-scroll delay-200">
-                  <div className="flex items-center">
-                    <div className="flex-1 pr-8"></div>
-                    <div className="w-4 h-4 bg-amber-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                    <div className="flex-1 text-left pl-8">
-                      <div className="bg-white rounded-2xl p-6 shadow-lg">
-                        <h3 className="text-xl font-light mb-2 text-gray-800">Senior Designer</h3>
-                        <p className="text-gray-600 mb-2">Maison Couture, Paris</p>
-                        <span className="text-sm text-amber-600 font-medium">2018-2020</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Timeline Item 3 */}
-                <div className="animate-fade-in-scroll delay-300">
-                  <div className="flex items-center">
-                    <div className="flex-1 text-right pr-8">
-                      <div className="bg-white rounded-2xl p-6 shadow-lg">
-                        <h3 className="text-xl font-light mb-2 text-gray-800">Creative Director</h3>
-                        <p className="text-gray-600 mb-2">Independent Studio, New York</p>
-                        <span className="text-sm text-purple-600 font-medium">2021-Present</span>
-                      </div>
-                    </div>
-                    <div className="w-4 h-4 bg-purple-500 rounded-full border-4 border-white shadow-lg z-10"></div>
-                    <div className="flex-1 pl-8"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Awards & Recognition */}
-      <section className="py-20 bg-gradient-to-br from-rose-50 via-white to-amber-50">
+      <section className="py-20 bg-gradient-to-br from-[#921e27] to-[#5e0e15] text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in-scroll">
-            <h2 className="text-4xl md:text-5xl font-light mb-8 text-gray-800 tracking-wide">Recognition & Awards</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-8 tracking-wide">Recognition & Awards</h2>
             <div className="flex items-center justify-center space-x-4 mb-8">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-rose-400"></div>
-              <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-white"></div>
+              <div className="w-2 h-2 bg-white rounded-full"></div>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-white"></div>
             </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+            {/* Award 1 */}
             <div className="animate-fade-in-scroll delay-100">
               <div className="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <div className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#f8c85c] to-[#d89c00] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-gray-800">Fashion Innovation Award</h3>
-                <p className="text-gray-600 text-sm">2023</p>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Fashion Innovation Award</h3>
+                <p className="text-sm text-gray-600">2023</p>
               </div>
             </div>
 
+            {/* Award 2 */}
             <div className="animate-fade-in-scroll delay-200">
               <div className="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <div className="w-16 h-16 bg-gradient-to-r from-rose-400 to-rose-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#921e27] to-[#7a1a21] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-gray-800">Sustainability Champion</h3>
-                <p className="text-gray-600 text-sm">2022</p>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Sustainability Champion</h3>
+                <p className="text-sm text-gray-600">2022</p>
               </div>
             </div>
 
+            {/* Award 3 */}
             <div className="animate-fade-in-scroll delay-300">
               <div className="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <div className="w-16 h-16 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#7a1a21] to-[#5e0e15] rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-gray-800">Rising Designer</h3>
-                <p className="text-gray-600 text-sm">2021</p>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Rising Designer</h3>
+                <p className="text-sm text-gray-600">2021</p>
               </div>
             </div>
 
+            {/* Award 4 */}
             <div className="animate-fade-in-scroll delay-400">
               <div className="bg-white rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                <div className="w-16 h-16 bg-gradient-to-r from-emerald-400 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#fbeaec] to-[#cfa1a6] rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-[#921e27]" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                 </div>
-                <h3 className="text-lg font-medium mb-2 text-gray-800">Best Graduate Collection</h3>
-                <p className="text-gray-600 text-sm">2016</p>
+                <h3 className="text-lg font-medium mb-2 text-[#921e27]">Best Graduate Collection</h3>
+                <p className="text-sm text-gray-600">2016</p>
               </div>
             </div>
           </div>

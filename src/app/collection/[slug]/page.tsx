@@ -8,17 +8,16 @@ import { useState, useEffect } from "react";
 // Collection data
 const collections = {
   "ethereal-spring": {
-    title: "Ethereal Spring",
-    subtitle: "Spring Collection 2024",
-    description: "Delicate fabrics meet bold silhouettes in this collection inspired by nature's awakening. Each piece captures the essence of spring's renewal through flowing lines and organic textures.",
-    longDescription:
-      "This collection draws inspiration from the delicate beauty of spring's first bloom. Soft pastels merge with bold architectural cuts, creating pieces that are both feminine and strong. The use of sustainable fabrics and eco-friendly dyes reflects our commitment to environmental consciousness while maintaining the highest standards of luxury fashion.",
-    heroImage: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=2574&auto=format&fit=crop",
+    title: "Marparbuei",
+    subtitle: "Marparbuei Collection",
+    description:
+      "Marparbuei,sebuah perjalanan budaya yang dituangkan ke dalam karya busana etnik modern. Tunjukkan keanggunan tradisi dengan cara baru! Jangan tunggu lagi, miliki koleksi ini sekarang juga! Pesan dengan mudah melalui WhatsApp atau temukan kami di Shopee untuk pengalaman belanja yang praktis dan menyenangkan.",
+    heroImage: "/image/marparbuei/3_1.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=2574&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?q=80&w=2574&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=2574&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2574&auto=format&fit=crop",
+      "/image/marparbuei/3_1.jpg",
+      "/image/marparbuei/3_2.jpg",
+      "/image/marparbuei/3_3.jpg",
+      "/image/marparbuei/3_4.jpg",
     ],
     color: "rose",
     price: "Starting from $450",
@@ -166,7 +165,7 @@ Please let me know your available times. Thank you!`;
             {/* Image Gallery */}
             <div className="animate-fade-in">
               <div className="relative mb-6">
-                <Image src={collection.gallery[selectedImage]} alt={collection.title} width={600} height={700} className="w-full h-96 lg:h-[500px] object-cover rounded-3xl shadow-2xl" />
+                <Image src={collection.gallery[selectedImage]} alt={collection.title} width={600} height={700} className="w-full h-96 lg:h-[500px] object-contain object-top rounded-3xl shadow-2xl bg-white" />
               </div>
 
               {/* Thumbnail Gallery */}
@@ -176,7 +175,7 @@ Please let me know your available times. Thank you!`;
                     key={index}
                     onClick={() => setSelectedImage(index)}
                     className={`relative w-20 h-20 rounded-2xl overflow-hidden transition-all duration-300 ${selectedImage === index ? "ring-4 ring-rose-500 scale-105" : "opacity-70 hover:opacity-100 hover:scale-105"}`}>
-                    <Image src={image} alt={`${collection.title} ${index + 1}`} width={80} height={80} className="w-full h-full object-cover" />
+                    <Image src={image} alt={`${collection.title} ${index + 1}`} width={80} height={80} className="w-full h-96 lg:h-[500px] object-contain object-top rounded-3xl shadow-2xl bg-white" />
                   </button>
                 ))}
               </div>
@@ -218,7 +217,7 @@ Please let me know your available times. Thank you!`;
                 <div className="space-y-4">
                   <button
                     onClick={handleWhatsAppOrder}
-                    className={`w-full bg-gradient-to-r ${getColorClasses(
+                    className={`w-full bg-[#921e27] ${getColorClasses(
                       collection.color
                     )} text-white font-medium py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center group`}>
                     <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24">
@@ -290,7 +289,7 @@ Please let me know your available times. Thank you!`;
           <div className="text-center">
             <Link
               href="/portfolio"
-              className="inline-flex items-center justify-center bg-gradient-to-r from-gray-800 to-gray-900 text-white font-medium py-4 px-12 rounded-full hover:from-gray-900 hover:to-black transition-all duration-300 transform hover:scale-105 shadow-xl">
+              className="inline-flex items-center justify-center bg-[#921e27] from-gray-800 to-gray-900 text-white font-medium py-4 px-12 rounded-full hover:from-gray-900 hover:to-black transition-all duration-300 transform hover:scale-105 shadow-xl">
               <span className="mr-2">View All Collections</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
