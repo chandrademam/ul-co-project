@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import "../globals.css";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -36,9 +37,11 @@ const ContactPage = () => {
 
         <div className="container mx-auto px-4 text-center relative z-10">
           <div className="animate-fade-in">
-            <h1 className="text-6xl md:text-8xl font-extralight leading-tight mb-8 tracking-wide text-gray-800">
+            <h1 className="text-3xl md:text-5xl font-extralight leading-tight mb-8 tracking-wide text-[#921e27]">
               Get In
-              <span className="block text-3xl md:text-4xl font-light bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-transparent mt-2">Touch</span>
+              <span className="block text-8xl md:text-8xl font-light bg-gradient-to-r from-rose-600 to-amber-600 bg-clip-text text-transparent mt-2" style={{ fontFamily: "'Alex Brush', cursive" }}>
+                Touch
+              </span>
             </h1>
 
             <div className="flex items-center justify-center space-x-4 mb-8">
@@ -114,7 +117,7 @@ const ContactPage = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-rose-500 to-pink-600 text-white font-medium py-4 px-8 rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                    className="w-full bg-[#921e27] to-pink-600 text-white font-medium py-4 px-8 rounded-2xl hover:from-rose-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
                     <span className="flex items-center justify-center">
                       <span className="mr-2">Send Message</span>
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -130,8 +133,8 @@ const ContactPage = () => {
             <div className="animate-fade-in-scroll delay-200">
               <div className="space-y-8">
                 {/* Contact Info */}
-                <div className="bg-gradient-to-br from-rose-100 to-pink-100 rounded-3xl p-8">
-                  <h3 className="text-2xl font-light mb-6 text-gray-800">Contact Information</h3>
+                <div className="bg-[#921e27] rounded-3xl p-8">
+                  <h3 className="text-2xl font-light mb-6 text-white">Contact Information</h3>
 
                   <div className="space-y-6">
                     <div className="flex items-center">
@@ -141,8 +144,8 @@ const ContactPage = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-medium text-gray-800">Email</h4>
-                        <p className="text-gray-600">hello@sarahchen.design</p>
+                        <h4 className="font-medium text-white">Email</h4>
+                        <p className="text-white">tarulipasaribu@gmail.com</p>
                       </div>
                     </div>
 
@@ -158,8 +161,8 @@ const ContactPage = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-medium text-gray-800">Phone</h4>
-                        <p className="text-gray-600">+1 (555) 123-4567</p>
+                        <h4 className="font-medium text-white">Phone</h4>
+                        <p className="text-white">081234567890</p>
                       </div>
                     </div>
 
@@ -171,11 +174,11 @@ const ContactPage = () => {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-medium text-gray-800">Studio</h4>
-                        <p className="text-gray-600">
-                          New York, NY
+                        <h4 className="font-medium text-white">Studio</h4>
+                        <p className="text-white">
+                          Siantar, Sumatera Utara
                           <br />
-                          By appointment only
+                          Lewat Janji
                         </p>
                       </div>
                     </div>
@@ -183,8 +186,8 @@ const ContactPage = () => {
                 </div>
 
                 {/* Social Media */}
-                <div className="bg-gradient-to-br from-amber-100 to-orange-100 rounded-3xl p-8">
-                  <h3 className="text-2xl font-light mb-6 text-gray-800">Follow My Work</h3>
+                <div className="bg-[#7b2c39] rounded-3xl p-8">
+                  <h3 className="text-2xl font-light mb-6 text-white">Follow My Work</h3>
 
                   <div className="flex space-x-4">
                     <a href="http://instagram.com/lifeatperuri/" className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-gray-600 hover:text-rose-600 hover:scale-110 transition-all duration-300 shadow-lg">
@@ -214,7 +217,7 @@ const ContactPage = () => {
                 </div>
 
                 {/* Availability */}
-                <div className="bg-gradient-to-br from-purple-100 to-indigo-100 rounded-3xl p-8">
+                <div className="bg-[#f8e4e7] rounded-3xl p-8">
                   <h3 className="text-2xl font-light mb-6 text-gray-800">Availability</h3>
 
                   <div className="space-y-4">
@@ -247,55 +250,96 @@ const ContactPage = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gradient-to-b from-white to-rose-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in-scroll">
-            <h2 className="text-4xl md:text-5xl font-light mb-8 text-gray-800 tracking-wide">Frequently Asked Questions</h2>
-            <div className="flex items-center justify-center space-x-4 mb-8">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-rose-400"></div>
-              <div className="w-2 h-2 bg-rose-400 rounded-full"></div>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-amber-400"></div>
+      <section
+        style={{
+          backgroundColor: "#921e27", // maroon-500
+          padding: "5rem 1rem",
+          color: "#f8e4e7", // maroon-100
+        }}>
+        <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+          <div
+            style={{
+              textAlign: "center",
+              marginBottom: "4rem",
+              animation: "fadeInUp 0.8s ease-out both",
+            }}>
+            <h2 style={{ fontSize: "2.5rem", fontWeight: 300, color: "#f8e4e7" }}>Frequently Asked Questions</h2>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                gap: "1rem",
+                marginBottom: "2rem",
+              }}>
+              <div
+                style={{
+                  height: "1px",
+                  width: "3rem",
+                  background: "linear-gradient(to right, transparent, #921e27)",
+                }}
+              />
+              <div
+                style={{
+                  width: "0.5rem",
+                  height: "0.5rem",
+                  backgroundColor: "#f8e4e7",
+                  borderRadius: "50%",
+                }}
+              />
+              <div
+                style={{
+                  height: "1px",
+                  width: "3rem",
+                  background: "linear-gradient(to left, transparent, #a03c4a)",
+                }}
+              />
             </div>
           </div>
 
-          <div className="max-w-4xl mx-auto space-y-6">
-            <div className="animate-fade-in-scroll delay-100">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-xl font-medium mb-4 text-gray-800">What&apos;s your design process like?</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  My design process begins with understanding your vision and requirements. We start with concept development, create detailed sketches, select materials, and move through prototyping to final production. Each project
-                  typically takes 4-12 weeks depending on complexity.
-                </p>
+          <div style={{ maxWidth: "768px", margin: "0 auto" }}>
+            {[
+              {
+                question: "What's your design process like?",
+                answer:
+                  "My design process begins with understanding your vision and requirements. We start with concept development, create detailed sketches, select materials, and move through prototyping to final production. Each project typically takes 4–12 weeks depending on complexity.",
+              },
+              {
+                question: "Do you work on custom pieces?",
+                answer:
+                  "Absolutely! Custom design is one of my specialties. Whether you need a one-of-a-kind piece for a special event or want to develop a complete collection, I work closely with clients to bring their unique vision to life.",
+              },
+              {
+                question: "What are your sustainability practices?",
+                answer:
+                  "Sustainability is core to my design philosophy. I prioritize eco-friendly materials, work with ethical suppliers, minimize waste through careful planning, and create timeless pieces designed to last for years rather than seasons.",
+              },
+              {
+                question: "How do you handle international projects?",
+                answer:
+                  "I work with clients globally through virtual consultations and detailed digital communication. For fittings and final adjustments, I can arrange travel or work with trusted local partners in major cities worldwide.",
+              },
+            ].map((faq, i) => (
+              <div
+                key={i}
+                style={{
+                  animation: "fadeInUp 0.8s ease-out both",
+                  animationDelay: `${(i + 1) * 0.1}s`,
+                  marginBottom: "2rem",
+                }}>
+                <div
+                  style={{
+                    backgroundColor: "white",
+                    color: "#921e27", // maroon-700
+                    borderRadius: "1rem",
+                    padding: "2rem",
+                    boxShadow: "0 8px 24px rgba(0, 0, 0, 0.1)",
+                  }}>
+                  <h3 style={{ fontSize: "1.25rem", fontWeight: 600, marginBottom: "1rem", color: "#921e27" }}>{faq.question}</h3>
+                  <p style={{ lineHeight: 1.6 }}>{faq.answer}</p>
+                </div>
               </div>
-            </div>
-
-            <div className="animate-fade-in-scroll delay-200">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-xl font-medium mb-4 text-gray-800">Do you work on custom pieces?</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Absolutely! Custom design is one of my specialties. Whether you need a one-of-a-kind piece for a special event or want to develop a complete collection, I work closely with clients to bring their unique vision to life.
-                </p>
-              </div>
-            </div>
-
-            <div className="animate-fade-in-scroll delay-300">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-xl font-medium mb-4 text-gray-800">What are your sustainability practices?</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Sustainability is core to my design philosophy. I prioritize eco-friendly materials, work with ethical suppliers, minimize waste through careful planning, and create timeless pieces designed to last for years rather than
-                  seasons.
-                </p>
-              </div>
-            </div>
-
-            <div className="animate-fade-in-scroll delay-400">
-              <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-xl font-medium mb-4 text-gray-800">How do you handle international projects?</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  I work with clients globally through virtual consultations and detailed digital communication. For fittings and final adjustments, I can arrange travel or work with trusted local partners in major cities worldwide.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

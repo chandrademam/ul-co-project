@@ -152,7 +152,7 @@ export default function Home() {
                 <div className="p-8">
                   <h3 className="text-2xl font-light mb-3 text-gray-800">UL.CO Aksesoris</h3>
                   <p className="text-gray-600 leading-relaxed mb-4">
-                    Warisan Budaya dalam Sentuhan Modern" ✨ Perpaduan kain ulos yang kaya makna dengan desain khas UL.CO menciptakan aksesori elegan dan timeless. Tambahkan nuansa budaya dalam gaya Anda! ⚡ Dapatkan sekarang & tunjukkan
+                    Warisan Budaya dalam Sentuhan Modern Perpaduan kain ulos yang kaya makna dengan desain khas UL.CO menciptakan aksesori elegan dan timeless. Tambahkan nuansa budaya dalam gaya Anda! Dapatkan sekarang & tunjukkan
                     kebanggaanmu!
                   </p>
                   <div className="flex items-center text-[#921e27] group-hover:text-[#7a1a21] transition-colors">

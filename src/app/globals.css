@@ -3,6 +3,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --maroon-900: #2e0c13; /* akar, kekuatan, tradisi */
+  --maroon-700: #4a1621; /* kehangatan, kedalaman */
+  --maroon-500: #7b2c39; /* elegan, feminin, tegas */
+  --maroon-400: #a03c4a; /* modern, berani */
+  --maroon-100: #f8e4e7; /* kelembutan, sentuhan kasih */
+
 }
 
 @theme inline {
@@ -128,4 +134,92 @@ html {
 
 .animate-float.delay-2000 {
   animation-delay: 2s;
+}
+
+.faq-section {
+  padding: 5rem 0;
+  background: linear-gradient(to bottom, var(--maroon-50), var(--maroon-100));
+}
+
+.faq-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.faq-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+.faq-header h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+  color: var(--maroon-900);
+  letter-spacing: 0.05em;
+}
+
+.faq-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.faq-divider-line {
+  height: 1px;
+  width: 3rem;
+  background: linear-gradient(to right, transparent, var(--maroon-400));
+}
+
+.faq-divider-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--maroon-500);
+  border-radius: 50%;
+}
+
+.faq-items {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  animation: fadeInUp 0.8s ease-out both;
+  animation-delay: var(--delay);
+}
+
+.faq-box {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.faq-box h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--maroon-700);
+}
+
+.faq-box p {
+  color: var(--maroon-600);
+  line-height: 1.6;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
